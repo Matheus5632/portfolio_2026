@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Rodrigues</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Calistoga&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Cursor Customizado -->
+    <div class="cursor-custom"></div>
+
+    <!-- Vídeo de Fundo -->
+    <video autoplay muted loop id="video-fundo">
+        <source src="fundo.mp4" type="video/mp4">
+    </video>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#certificados">Certificados</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="secao hero">
+        <div class="conteudo">
+            <h1 id="texto-digitado"></h1>
+            <p>Louco por tecnologia e focado em criar experiências incríveis.</p>
+            
+        </div>
+    </section>
+    <script>
+    const elemento = document.getElementById('texto-digitado');
+    const texto = "Eu sou Matheus Rodrigues Vieira";
+    let i = 0;
+
+    function digitar() {
+        if (i < texto.length) {
+            elemento.innerHTML += texto.charAt(i);
+            i++;
+            setTimeout(digitar, 70); // Velocidade de digitação (quanto menor, mais rápido)
+        } else {
+            elemento.classList.add('cursor-pisca'); // Adiciona o cursor piscando ao final
+        }
+    }
+
+    digitar();
+</script>
+
+   <section id="sobre" class="secao">
+        <div class="conteudo">
+            <h2>Sobre Mim</h2>
+            
+            <div class="sobre-container">
+                <!-- Lado Esquerdo: Texto -->
+                <div class="sobre-texto">
+                    <p>Tenho 22 anos e sou de São Paulo (SP) - Brasil. 
+                    Estudante de Ciência da Computação na Universidade São Judas Tadeu, com formação técnica em TI, finalizada em 2020, pela ETEC Parque da Juventude. 
+                    A de uma oportunidade de estágio com foco na área de Desenvolvimento de Software ou Banco de Dados.</p>
+                    <br>
+                    <p>Tenho forte interesse em evoluir minhas habilidades práticas em um ambiente colaborativo, ético e focado em inovação, sempre buscando a excelência nos resultados. 
+                    Estou em busca da minha primeira oportunidade para aplicar meus conhecimentos e crescer junto a times inovadores.</p>
+                </div>
+
+                <!-- Lado Direito: Imagem -->
+                <div class="sobre-imagem">
+                    <div class="foto-perfil-wrapper">
+                        <!-- MUDE O NOME DA IMAGEM ABAIXO PARA A SUA FOTO -->
+                        <img src="img/matheus.jpg" alt="Foto de Matheus" class="foto-perfil">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="secao">
+        <div class="conteudo">
+            <h2>Habilidades Técnicas</h2>
+            <div class="grid-habilidades">
+    <!-- Você pode adicionar quantas imagens quiser aqui -->
+    <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+        <p>HTML5</p>
+    </div>
+    <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+        <p>CSS3</p>
+    </div>
+    <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+        <p>JavaScript</p>
+    </div>
+    <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+        <p>MySQL</p>
+    </div>
+    <!-- Novas tecnologias que você pediu -->
+    <div class="skill-item">
+        <img src="https://img.icons8.com/color/144/microsoft-word-2019--v2.png" alt="Word">
+        <p>Word</p>
+    </div>
+    <div class="skill-item">
+        <img src="https://img.icons8.com/color/144/microsoft-excel-2019--v2.png" alt="Excel">
+        <p>Excel</p>
+    </div>
+    <div class="skill-item">
+        <img src="https://img.icons8.com/color/144/power-bi.png" alt="Power BI">
+        <p>Power BI</p>
+    </div>
+    <div class="skill-item">
+        <img src="https://img.icons8.com/color/144/microsoft-powerpoint-2019--v2.png" alt="PowerPoint">
+        <p>PowerPoint</p>
+    </div>
+    <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+        <p>GitHub</p>
+    </div>
+    <div class="skill-item">
+        <img src="https://s3.amazonaws.com//beta-img.b2bstack.net/uploads/production/provider/image/8/linx-logotipo.jpg" alt="Linx ERP" style="object-fit: contain;">
+        <p>ERPLinx</p>
+    </div>
+</div>
+</div>
+        </div>
+    </section>
+
+    <section id="certificados" class="secao">
+        <div class="conteudo">
+            <h2>Meus Certificados</h2>
+            <div class="carrossel-certificados">
+                <button id="btn-prev" class="btn-seta">&#10094;</button>
+                <div class="carrossel-wrapper" id="container-certificados"></div>
+                <button id="btn-next" class="btn-seta">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="secao">
+        <div class="conteudo">
+            <h2>Projetos em Destaque</h2>
+            <div class="grid-projetos">
+                <div class="card-projeto">
+                    <h3>Projeto Universitário - Nestlé</h3>
+                    <p>Participação no desenvolvimento de um aplicativo acadêmico em conjunto com a Nestlé no 1º semestre de 2023, atuando na estruturação e documentação técnica do sistema.</p>
+                </div>
+                <div class="card-projeto">
+                    <h3>Plataforma de Micro-learning</h3>
+                    <p>Planejamento e estruturação de proposta de valor para uma plataforma focada em cursos curtos e gratuitos, otimizada para dispositivos móveis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="secao">
+    <div class="conteudo">
+        <h2>Vamos Conversar?</h2>
+        <p style="margin-bottom: 2rem; text-align: center;">Entre em contato comigo:</p>
+        
+       <div class="social-links">
+    <a href="https://wa.me/11915322862" target="_blank" class="social-icon whatsapp">
+        <img src="https://cdn.simpleicons.org/whatsapp/ffffff" alt="WhatsApp" class="social-img">
+        <span class="tooltip">WhatsApp</span>
+    </a>
+    <a href="https://instagram.com/theus.rv" target="_blank" class="social-icon">
+        <img src="https://cdn.simpleicons.org/instagram/ffffff" alt="Instagram" class="social-img">
+        <span class="tooltip">Instagram</span>
+    </a>
+    <a href="https://github.com/Matheus5632" target="_blank" class="social-icon">
+        <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub" class="social-img">
+        <span class="tooltip">GitHub</span>
+    </a>
+    <!-- LinkedIn corrigido com imagem e link diretos -->
+    <a href="https://www.linkedin.com/in/matheus-rodrigues-243b20240" target="_blank" class="social-icon">
+        <img src="https://img.icons8.com/ios-filled/100/ffffff/linkedin.png" alt="LinkedIn" class="social-img">
+        <span class="tooltip">LinkedIn</span>
+    </a>
+    <!-- E-mail com ícone de carta genérico garantido -->
+    <a href="mailto:matheus.vieira001@outlook.com" class="social-icon">
+        <img src="https://img.icons8.com/ios-filled/100/ffffff/mail.png" alt="E-mail" class="social-img">
+        <span class="tooltip">E-mail</span>
+    </a>
+</div>
+    </div>
+</section>
+
+    <script>
+        // Carrossel
+const img = [ "img/2.jpg", "img/1.jpg", "img/16.jpg", "img/17.jpg", "img/3.jpg", "img/4.jpg", "img/5.jpg", "img/6.jpg", "img/7.jpg", "img/8.jpg", "img/9.jpg", "img/10.jpg", "img/11.jpg", "img/12.jpg", "img/13.jpg", "img/14.jpg", "img/15.jpg"];
+        const container = document.getElementById('container-certificados');
+        if (container) {
+            img.forEach((n) => {
+                const card = document.createElement('div');
+                card.classList.add('certificado-card');
+                card.innerHTML = `<img src="${n}" alt="Certificado">`;
+                container.appendChild(card);
+            });
+        }
+        const cards = document.querySelectorAll('.certificado-card');
+        const btnPrev = document.getElementById('btn-prev');
+        const btnNext = document.getElementById('btn-next');
+        let indexAtual = 1;
+        function atualizarCarrossel() {
+            if (cards.length === 0) return;
+            cards.forEach((c, i) => {
+                c.classList.remove('ativo', 'esquerda', 'direita');
+                if (i === indexAtual) c.classList.add('ativo');
+                else if (i === (indexAtual - 1 + cards.length) % cards.length) c.classList.add('esquerda');
+                else if (i === (indexAtual + 1) % cards.length) c.classList.add('direita');
+            });
+        }
+        if (btnNext && btnPrev) {
+            btnNext.addEventListener('click', () => { indexAtual = (indexAtual + 1) % cards.length; atualizarCarrossel(); });
+            btnPrev.addEventListener('click', () => { indexAtual = (indexAtual - 1 + cards.length) % cards.length; atualizarCarrossel(); });
+        }
+        atualizarCarrossel();
+
+        // Cursor Customizado
+        const cursor = document.querySelector('.cursor-custom');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+        document.querySelectorAll('a, button, .card-projeto').forEach(item => {
+            item.addEventListener('mouseover', () => { cursor.style.transform = 'scale(2)'; cursor.style.backgroundColor = 'rgba(56, 189, 248, 0.3)'; });
+            item.addEventListener('mouseleave', () => { cursor.style.transform = 'scale(1)'; cursor.style.backgroundColor = 'transparent'; });
+        });
+    </script>
+    <footer>
+      <span> &copy; Matheus Rodrigues Vieira, 2026 - Todos os direitos reservados.</span>
+    </footer>
+</body>
+</html>
